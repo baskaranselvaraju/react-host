@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,7 +6,11 @@ function App() {
 
   return (
     <>
-    <h1>Welcome to React</h1>
+    <h1 style={{color:"red", border:"5px solid green"}}>Welcome to React</h1>
+    <p style={{backgroundColor:"cyan"}}>Counter App</p>
+    <p>Count : {count}</p>
+    <button style={{cursor:"pointer"}} onClick={()=>setCount(count+1)}>Increament</button>
+    <button style={{cursor:"pointer"}} onClick={()=>setCount(count-1)}>Decreament</button>
     </>
   )
 }
